@@ -8,28 +8,29 @@
     <h4>Formulaire de création</h4>
     <form method="post" action="http://localhost:8080/JakarteEE-TodoList-1.0-SNAPSHOT/api/todo/create">
         <div>
-            <label for="urgence"></label>
-            <select id="urgence" name="urgence" >
+            <label for="urgenceCrea"></label>
+            <select id="urgenceCrea" name="urgence" >
                 <option value="1">Haute</option>
                 <option value="2">Normale</option>
                 <option value="3">Faible</option>
             </select>
         </div>
         <div>
-            <label for="title"></label>
-            <input type="text" id="title" name="title">
+            <label for="titleCrea"></label>
+            <input type="text" id="titleCrea" name="title">
         </div>
         <div>
-            <label for="description"></label>
-            <input type="text" id="description" name="description">
+            <label for="descriptionCrea"></label>
+            <input type="text" id="descriptionCrea" name="description">
         </div>
         <input type="submit" value="Créer">
     </form>
     <!-- DELETE -->
+    <h4>Formulaire de Suppression</h4>
     <form method="get" action="http://localhost:8080/JakarteEE-TodoList-1.0-SNAPSHOT/api/todo/delete">
         <div>
-            <label for="id"></label>
-            <select id="id" name="id" >
+            <label for="idDel"></label>
+            <select id="idDel" name="id" >
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -38,30 +39,31 @@
         <input type="submit" value="Supprimer">
     </form>
     <!-- UPDATE -->
+    <h4>Formulaire d'update</h4>
     <form method="post" action="http://localhost:8080/JakarteEE-TodoList-1.0-SNAPSHOT/api/todo/update">
         <div>
-            <label for="id"></label>
-            <select id="id" name="id" >
+            <label for="idUp"></label>
+            <select id="idUp" name="id" >
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
         </div>
         <div>
-            <label for="urgence"></label>
-            <select id="urgence" name="urgence" >
+            <label for="urgenceUp"></label>
+            <select id="urgenceUp" name="urgence" >
                 <option value="1">Haute</option>
                 <option value="2">Normale</option>
                 <option value="3">Faible</option>
             </select>
         </div>
         <div>
-            <label for="title"></label>
-            <input type="text" id="title" name="title">
+            <label for="titleUp"></label>
+            <input type="text" id="titleUp" name="title">
         </div>
         <div>
-            <label for="description"></label>
-            <input type="text" id="description" name="description">
+            <label for="descriptionUp"></label>
+            <input type="text" id="descriptionUp" name="description">
         </div>
         <input type="submit" value="Mettre à jour">
     </form>
