@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d607956-9823-4671-ac6a-318f9eae65c6" name="Changes" comment="Ajout de titres au html">
+    <list default="true" id="5d607956-9823-4671-ac6a-318f9eae65c6" name="Changes" comment="Correction d'erreurs dans les label du formulaire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/resources/TodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/resources/TodoList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,12 +138,26 @@
         </option>
       </method>
     </configuration>
+    <configuration name="api" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TodoList-Jakarta/JakarteEE-TodoList/api/" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TodoList-Jakarta/JakarteEE-TodoList/main.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="todo" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/JakarteEE-TodoList-1.0-SNAPSHOT/api/todo">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="GlassFish Server.GlassFish 6.2023.2" />
+      <item itemvalue="JavaScript Debug.main.html" />
+      <item itemvalue="JavaScript Debug.todo" />
+      <item itemvalue="JavaScript Debug.api" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.main.html" />
+        <item itemvalue="JavaScript Debug.todo" />
+        <item itemvalue="JavaScript Debug.api" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +170,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677679215192</updated>
       <workItem from="1677679216261" duration="3714000" />
+      <workItem from="1677744461739" duration="1813000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1677682017186</created>
@@ -163,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677682017186</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correction d'erreurs dans les label du formulaire">
+      <created>1677684114803</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677684114804</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +206,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Ajout de titres au html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de titres au html" />
+    <MESSAGE value="Correction d'erreurs dans les label du formulaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction d'erreurs dans les label du formulaire" />
   </component>
 </project>

@@ -8,9 +8,10 @@ import jakarta.ws.rs.core.MediaType;
 @Path("todo")
 public class TodoList {
     @GET
-    @Path("get/{id}")
-    public Todo getTodoByID(@PathParam("id") int id) {
-        return new Todo(4, "Poubelle", "Sors les poubelles, sérieux", Urgence.HAUTE);
+    @Path("get")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Todo getTodoByID(@QueryParam("id") int id) {
+        return new Todo(id, "Poubelle", "Sors les poubelles, sérieux", Urgence.HAUTE);
     }
 
     @POST
