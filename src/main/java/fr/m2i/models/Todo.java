@@ -1,8 +1,9 @@
 package fr.m2i.models;
 
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name="Todo")
 public class Todo {
     private int id;
     private String title;
@@ -23,7 +24,7 @@ public class Todo {
         this.description = description;
         this.urgence = urgence;
     }
-
+    @XmlElement(name="id")
     public int getId() {
         return id;
     }
@@ -31,7 +32,7 @@ public class Todo {
     public void setId(int id) {
         this.id = id;
     }
-
+    @XmlElement(name="title")
     public String getTitle() {
         return title;
     }
@@ -39,7 +40,7 @@ public class Todo {
     public void setTitle(String title) {
         this.title = title;
     }
-
+    @XmlElement(name="description")
     public String getDescription() {
         return description;
     }
@@ -47,7 +48,7 @@ public class Todo {
     public void setDescription(String description) {
         this.description = description;
     }
-
+    @XmlElement(name="urgence")
     public Urgence getUrgence() {
         return urgence;
     }
