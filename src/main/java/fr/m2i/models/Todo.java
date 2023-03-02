@@ -1,5 +1,8 @@
 package fr.m2i.models;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Todo {
     private int id;
     private String title;

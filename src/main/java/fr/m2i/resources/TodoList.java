@@ -1,17 +1,46 @@
 package fr.m2i.resources;
 
+import fr.m2i.database.Database;
 import fr.m2i.models.Todo;
 import fr.m2i.models.Urgence;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+
+import java.util.ArrayList;
 
 @Path("todo")
 public class TodoList {
+
+
     @GET
     @Path("get")
     @Produces(MediaType.APPLICATION_JSON)
-    public Todo getTodoByID(@QueryParam("id") int id) {
-        return new Todo(id, "Poubelle", "Sors les poubelles, sérieux", Urgence.HAUTE);
+    public Response getTodoByID(@QueryParam("id") int id) {
+        Todo result = Database.getTodoById(id);
+        if (result == null) {
+            return Response
+                    .status(Response.Status.NOT_FOUND)
+                    .entity("Index incorrect")
+                    .build();
+        } else {
+            return Response
+                    .status(Response.Status.OK)
+                    .entity(result)
+                    .build();
+        }
+    }
+
+    @GET
+    @Path("getList")
+    @Produces(MediaType.APPLICATION_XML)
+    public Response getTodoListXML() {
+        Todo[] result = Database.getTodoList();
+
+        return Response
+                .status(Response.Status.OK)
+                .entity(result)
+                .build();
     }
 
     @POST

@@ -5,15 +5,15 @@
     <title>Todo list</title>
 </head>
 <body>
+    <h4>Afficher la liste</h4>
+    <form method="get" action="http://localhost:8080/JakarteEE-TodoList-1.0-SNAPSHOT/api/todo/getList">
+        <input type="submit" value="Afficher">
+    </form>
     <h4>Formulaire d'Affichage</h4>
     <form method="get" action="http://localhost:8080/JakarteEE-TodoList-1.0-SNAPSHOT/api/todo/get">
         <div>
             <label for="idGet"></label>
-            <select id="idGet" name="id" >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
+            <input type="text" id="idGet" name="id">
         </div>
         <input type="submit" value="Afficher">
     </form>
